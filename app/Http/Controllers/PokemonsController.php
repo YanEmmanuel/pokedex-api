@@ -23,4 +23,9 @@ class PokemonsController extends Controller
         $pokemon = Pokemon::with('status')->where('id', $id)->firstOrFail();
         return $pokemon;
     }
+
+    public function create_pokemon(Request $request)
+    {
+        //
+    }
 }
